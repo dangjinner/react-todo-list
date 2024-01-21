@@ -20,9 +20,9 @@ export default function TodoApp() {
   };
 
   const handleSubmit = () => {
-    if(!newTask) {
-        setError('New task cannot be empty!');
-        return;
+    if (!newTask) {
+      setError("New task cannot be empty!");
+      return;
     }
 
     setError(null);
@@ -40,13 +40,13 @@ export default function TodoApp() {
   };
 
   const handleUpdateTask = () => {
-    if(!newTask) {
-        setError('New task cannot be empty!');
-        return;
+    if (!newTask) {
+      setError("New task cannot be empty!");
+      return;
     }
 
     setError(null);
-    
+
     setTasks((prevTasks) =>
       prevTasks.map((task, index) => {
         if (task.id === editTask.id) {
@@ -98,7 +98,7 @@ export default function TodoApp() {
     <>
       <div className="todo-app">
         <div className="todo-box">
-          <h1 className="title">Todo List</h1>
+          <h1 className="title">React Todo List App</h1>
           <div className="create-box">
             <input
               type="text"
